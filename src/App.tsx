@@ -1,5 +1,5 @@
 import { Routes, Route, NavLink, Link } from 'react-router-dom';
-import { Home, BookOpen, BarChart3, Info, Sparkles } from 'lucide-react';
+import { Home, BookOpen, BarChart3, Info } from 'lucide-react';
 import { useProgress } from './hooks/useProgress';
 import HomePage from './pages/HomePage';
 import ModulesPage from './pages/ModulesPage';
@@ -23,7 +23,9 @@ function App() {
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <Link to="/" className="flex items-center gap-3 text-emerald-700">
               <div className="rounded-2xl bg-emerald-600 p-3 text-white shadow-lg">
-                <Sparkles size={20} />
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-emerald-500 text-2xl shadow-inner">
+                  ₹
+                </span>
               </div>
               <div>
                 <p className="text-xl font-semibold">RupeeRoots</p>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="coin">
+  <defs>
+    <linearGradient id="coinGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6c13d"/>
+      <stop offset="100%" stop-color="#d29a18"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#coinGradient)" stroke="#f8e29b" stroke-width="4"/>
+  <path d="M23 20c0 3.3 1.8 5.2 4.5 6.1 1.2.4 2.7.7 4.5.9v6.4c-1.4-.2-2.6-.4-3.7-.6-4.1-.7-6.7-2.3-6.7-6.9v-2.8h-5v3.2c0 6.6 3.7 10.3 11.7 11.6v5.5h5v-5.1c4.1.5 6.7 2.3 6.7 6.9v2.8h5v-3.2c0-6.6-3.7-10.3-11.7-11.6v-6.7c1.6.2 3.1.5 4.2.9 2.8.9 4.5 2.7 4.5 6.1v2.4h5v-2.5c0-5.8-3.1-8.9-8.7-10-1.4-.3-3-.5-4.8-.7V20h-5v.2c-2.1.1-4 .3-5.4.7-3.8 1-5.8 3.4-5.8 7.4v2.4h5v-2.4z" fill="#ffffff"/>
+</svg>
