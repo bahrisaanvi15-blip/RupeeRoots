@@ -26,8 +26,8 @@ export type Module = {
   title: string;
   subtitle: string;
   description: string;
-  researchPapers?: ResearchPaper[];
   lessons: Lesson[];
+  researchPapers?: ResearchPaper[];
 };
 
 export type ProgressState = {

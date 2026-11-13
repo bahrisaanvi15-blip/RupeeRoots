@@ -4,62 +4,46 @@ export const modules: Module[] = [
   {
     id: 'module-1',
     title: 'Module 1',
-    subtitle: 'Finance Fundamentals',
+    subtitle: 'Risk, Return and Capital Markets',
     description:
-      'This module establishes the analytical foundations of financial decision-making. It examines the relationship between risk and return, the role of time value, and the logic behind value creation in corporate settings. Students are introduced to the financial concepts that underpin capital allocation, investment evaluation, and capital market behaviour.',
-    researchPapers: [
-      {
-        title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
-        authors: 'Modigliani & Miller',
-        year: '1958',
-        summary: 'Foundational analysis of corporate valuation and investment under uncertainty.',
-        url: 'https://www.jstor.org/stable/10.2307/2550593',
-      },
-      {
-        title: 'Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk',
-        authors: 'Sharpe',
-        year: '1964',
-        summary: 'Classic treatment of risk-adjusted return and equilibrium pricing.',
-        url: 'https://www.jstor.org/stable/10.2307/2977928',
-      },
-    ],
+      'This module examines the theoretical basis of risk and return, the pricing of uncertainty, and the role of capital markets in allocating scarce financial resources. It frames investment and financing decisions through the lens of risk-adjusted returns, market efficiency, and value creation.',
     lessons: [
       {
         id: 'lesson-1',
         title: 'Risk and Return',
-        summary: 'The expected return on an asset reflects the compensation required for bearing uncertainty.',
+        summary: 'Expected return reflects the compensation required for bearing uncertainty.',
         explanation: `
-          In corporate finance, the relationship between risk and return is central to every decision. Investors do not value an opportunity only by its expected payoff; they also price the uncertainty surrounding that payoff. A higher expected return is normally required for a project or security that carries greater variability, default risk, or systematic exposure. This principle underpins capital market theory and provides the benchmark for evaluating financial decisions within firms.
+          Corporate finance begins with the principle that risk and return are inseparable. Investors do not evaluate projects solely by nominal return; they evaluate expected returns relative to the uncertainty attached to those returns. Firms therefore cannot ignore risk when selecting investment opportunities, because risk determines the return required by capital providers.
 
-          Risk can be decomposed into systematic risk and firm-specific risk. Systematic risk is the component that cannot be diversified away and therefore commands a premium under equilibrium pricing. Firm-specific risk may be reduced through diversification and is therefore less relevant to required return in a well-functioning market. This distinction explains why managerial decision-making must be framed not merely in accounting terms but in risk-adjusted financial terms.
+          Systematic risk is particularly important because it cannot be diversified away. It is the component priced by capital markets and reflected in the cost of equity. By contrast, diversifiable risk may be reduced through portfolio diversification, which is why it is not typically rewarded with a higher required return in equilibrium. The implication is clear: project evaluation must be anchored in risk-adjusted return, not raw accounting profit.
 
-          For firms, the implication is direct: value creation depends on generating returns above the required rate of return compatible with project risk. Financial managers must therefore ensure that investment opportunities compensate investors for the risk they are assuming. The risk-adjusted hurdle rate becomes the gateway through which projects are evaluated and capital allocated.
+          In practical terms, financial managers use the cost of capital as the hurdle rate for strategic investment. A project creates economic value only when its expected return exceeds the required return consistent with its risk profile. This is the logic that connects corporate strategy, valuation, and capital allocation.
         `,
-        simpleExplanation: 'The greater the uncertainty, the higher the return investors usually demand.',
-        example: 'A start-up venture may promise strong upside, but it must offer compensating returns because its cash flows are volatile.',
-        analogy: 'Risk is like navigating a narrow mountain path: the more unstable the route, the higher the reward expected for taking it.',
-        reflectionQuestion: 'Why do investors require a higher expected return from riskier investments?',
+        simpleExplanation: 'The greater the uncertainty, the higher the return investors normally require.',
+        example: 'A venture capital investment may offer a very high expected return because its cash flows are highly uncertain and volatile.',
+        analogy: 'Risk is like a mountain trail: the steeper and less stable the route, the greater the premium expected for taking it.',
+        reflectionQuestion: 'Why is expected return higher when the underlying investment is riskier?',
         options: [
-          'Because riskier assets demand compensation for uncertainty',
-          'Because companies always pay more dividends to risky firms',
-          'Because risk reduces the market value of securities',
-          'Because regulation requires higher profitability for risky projects',
+          'Because investors require compensation for uncertainty',
+          'Because regulators force firms to pay more on risky projects',
+          'Because accounting profit always rises with risk',
+          'Because debt is automatically more risky than equity',
         ],
-        correctAnswer: 'Because riskier assets demand compensation for uncertainty',
+        correctAnswer: 'Because investors require compensation for uncertainty',
         term: 'Risk and Return',
         researchPapers: [
           {
             title: 'Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk',
             authors: 'William F. Sharpe',
             year: '1964',
-            summary: 'Introduces the capital asset pricing model and the pricing of systematic risk.',
+            summary: 'Introduces the relationship between systematic risk and expected return in equilibrium.',
             url: 'https://www.jstor.org/stable/10.2307/2977928',
           },
           {
             title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
-            authors: 'Modigliani and Miller',
+            authors: 'Franco Modigliani and Merton H. Miller',
             year: '1958',
-            summary: 'Establishes the foundations of corporate valuation and investment under uncertainty.',
+            summary: 'Foundational framework for linking investment decisions, financing, and required returns.',
             url: 'https://www.jstor.org/stable/10.2307/2550593',
           },
         ],
@@ -67,32 +51,32 @@ export const modules: Module[] = [
       {
         id: 'lesson-2',
         title: 'Time Value of Money',
-        summary: 'A pound today is worth more than a pound in the future because it can be invested and earn returns.',
+        summary: 'A pound today is worth more than a pound tomorrow because it can earn a return now.',
         explanation: `
-          The time value of money is one of the most fundamental principles in corporate finance. It states that a sum of money available now is worth more than the same nominal amount in the future because the present amount can be invested to generate returns. This logic makes discounting and compounding central to valuation, project selection, and financing analysis.
+          The time value of money is one of the most fundamental concepts in finance. It states that money available now is worth more than the same nominal amount in the future because present money can be invested and earn returns. This principle is embedded in both valuation and capital budgeting.
 
-          Discounting converts future cash flows into present value terms, allowing firms to compare alternative investments on a common basis. Compounding captures the accumulation of value over time. Together, they permit financial managers to assess whether a project creates value by generating returns above an appropriate opportunity cost of capital.
+          Discounting and compounding are the two key tools. Discounting converts future cash flows into present value, while compounding measures how a current amount grows over time. These tools allow firms to compare investment alternatives over different time horizons and to determine whether expected cash inflows justify current capital outlays.
 
-          In practice, the time value of money informs the pricing of bonds, the valuation of equity, and the decision to invest in long-lived capital projects. The same logic also explains why debt contracts include interest payments and why investors demand compensation for postponing consumption.
+          This concept is central to debt pricing, equity valuation, project appraisal, and strategic investment. Without it, firms would struggle to measure the economic value of future returns or the real cost of financing.
         `,
-        simpleExplanation: 'Money now is more valuable than the same money later because it can earn a return.',
-        example: 'Receiving £10,000 today is more valuable than receiving £10,000 three years from now because you can invest today’s amount immediately.',
-        analogy: 'A pound now is like a seed planted immediately; a pound later is a seed that has not yet been planted.',
-        reflectionQuestion: 'Why is the present value of a future cash flow lower than its nominal value?',
+        simpleExplanation: 'Money now is worth more than the same money later because it can earn interest or produce returns.',
+        example: 'Receiving £10,000 today is more valuable than receiving £10,000 in three years because the present sum can be invested immediately.',
+        analogy: 'A pound now is a seed already in the ground; a pound later is still waiting to be planted.',
+        reflectionQuestion: 'Why are future cash flows discounted before they are compared to current costs?',
         options: [
-          'Because future cash flows always carry greater uncertainty',
-          'Because money has opportunity cost and can earn returns over time',
-          'Because inflation always reduces the value of cash',
-          'Because investors prefer debt over equity',
+          'Because money has an opportunity cost and time value',
+          'Because future cash flows are always smaller',
+          'Because debt is always less risky than equity',
+          'Because stock prices are unaffected by timing',
         ],
-        correctAnswer: 'Because money has opportunity cost and can earn returns over time',
+        correctAnswer: 'Because money has an opportunity cost and time value',
         term: 'Time Value of Money',
         researchPapers: [
           {
             title: 'The Theory of Interest',
             authors: 'Irving Fisher',
             year: '1930',
-            summary: 'Classic analysis of time preference, intertemporal choice, and interest.',
+            summary: 'Classic analysis of intertemporal choice and the role of interest in economic value.',
             url: 'https://archive.org/details/theoryofinterest00fish',
           },
         ],
@@ -100,106 +84,99 @@ export const modules: Module[] = [
       {
         id: 'lesson-3',
         title: 'Value Creation',
-        summary: 'A firm creates value when it deploys capital in projects that produce returns exceeding the cost of capital.',
+        summary: 'A firm creates value when investment returns exceed the required return on capital.',
         explanation: `
-          Value creation is the central objective of corporate finance. A firm does not create value simply by increasing revenue or producing more units; it creates value by earning returns that exceed the returns required by investors for the capital employed. The difference between a project’s return and the cost of capital is the economic surplus generated for shareholders.
+          Value creation is the core objective of corporate finance. A company creates wealth when it invests capital in projects that generate returns higher than the return required by its providers of capital. Put differently, value is created when economic return exceeds the opportunity cost of capital.
 
-          This principle is operationalised through capital budgeting and discounted cash flows. Managers compare expected project cash flows with the required rate of return and accept investments only when they generate positive net present value. In this framework, value is created only when the present value of benefits exceeds the present value of costs.
+          This principle underlies discounted cash flow analysis and net present value rules. A project is attractive if the present value of its future cash flows exceeds the upfront investment after adjusting for the relevant cost of capital. This is why capital budgeting is not simply about growth or accounting earnings; it is fundamentally about economic surplus.
 
-          Therefore, sound financial management is not merely about growth or expansion for its own sake. Strategic investment must be disciplined by return thresholds, expected cash flows, and capital market conditions. Value creation is a function of both investment quality and financing efficiency.
+          Value creation therefore sits at the intersection of investment strategy, financing decisions, and governance. The proper objective is not volume or market share alone, but sustainable value generation after the cost of capital has been taken into account.
         `,
-        simpleExplanation: 'A business creates value when it earns more than the minimum return required by its investors.',
-        example: 'If a project costs £1 million and yields a present value of £1.2 million at the firm’s cost of capital, it creates economic value.',
-        analogy: 'Value creation is like a business earning a return above the cost of borrowing the capital needed to operate.',
-        reflectionQuestion: 'When does an investment create shareholder value?',
+        simpleExplanation: 'A project creates value when it earns more than the minimum return required by investors.',
+        example: 'If a project costs £2 million and has a present value of £2.4 million, it creates £0.4 million of value.',
+        analogy: 'Value creation is like earning a return above the price of borrowing the capital used to produce it.',
+        reflectionQuestion: 'When does a project create shareholder value?',
         options: [
-          'When it increases accounting profit regardless of cost',
-          'When its expected return exceeds the cost of capital',
-          'When it increases market share immediately',
-          'When it reduces cash flow volatility',
+          'When the project earns more than the cost of capital',
+          'When it increases revenue regardless of profitability',
+          'When it reduces debt immediately',
+          'When it avoids risk entirely',
         ],
-        correctAnswer: 'When its expected return exceeds the cost of capital',
+        correctAnswer: 'When the project earns more than the cost of capital',
         term: 'Value Creation',
         researchPapers: [
           {
             title: 'A Theory of the Firm',
-            authors: 'Coase',
+            authors: 'Ronald Coase',
             year: '1937',
-            summary: 'Classic foundation for understanding firm behaviour and resource allocation.',
-            url: 'https://www.jstor.org/stable/2393951',
+            summary: 'Classic economic foundation for understanding the firm and efficient resource allocation.',
+            url: 'https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0335.1937.tb00002.x',
           },
         ],
       },
       {
         id: 'lesson-4',
-        title: 'Equity and Preference Shares',
-        summary: 'Ordinary equity and preference shares differ in claim priority, control rights, and risk-return profiles.',
+        title: 'Market Efficiency',
+        summary: 'Capital markets process information, but prices are not always perfectly or immediately efficient.',
         explanation: `
-          Equity financing comes in different forms. Ordinary shares represent residual ownership in the firm. They give voting rights and participation in the upside, but their claims are subordinate to debt and preference shareholders. This residual claim structure means ordinary shareholders bear the greatest uncertainty, yet they also stand to benefit most from strong long-term performance.
+          The efficient markets hypothesis suggests that prices reflect available information to a substantial degree. Under this view, it is difficult for investors to earn persistent abnormal returns without taking additional risk or possessing superior information. This matters because corporate financing decisions are influenced by market prices and investor expectations.
 
-          Preference shares are hybrid securities. They generally provide a fixed dividend and rank above ordinary equity in the distribution of dividends and liquidation proceeds, but usually below debt. Preference shareholders typically receive less upside than ordinary shareholders and often have limited or no voting rights. As a result, preference financing is often viewed as a compromise between debt and ordinary equity.
+          Efficiency does not mean perfection. Markets can deviate from fundamental value because of behavioural biases, liquidity constraints, asymmetric information, and macroeconomic shocks. Even so, the important implication is that prices are informative and that arbitrage opportunities tend to be transient when competition is strong.
 
-          The choice between issuing ordinary equity and preference shares is strategic. Ordinary equity may dilute control and increase expected return demands, whereas preference shares can reduce immediate dilution but may impose a fixed dividend burden. The optimal financing choice depends on the firm’s risk profile, governance objectives, and market conditions.
+          For firms, this means that capital raising, valuation, and strategic communication are all shaped by how the market interprets information. A well-governed and well-informed firm can often secure financing on more favourable terms than one with uncertain disclosure.
         `,
-        simpleExplanation: 'Ordinary shares carry more risk and more upside; preference shares offer steadier income and seniority over ordinary shares.',
-        example: 'A mature company may issue preference shares to raise finance without giving away voting control, while a growth firm may prefer ordinary equity to attract long-term capital.',
-        analogy: 'Ordinary equity is like full partnership rights in a venture, while preference shares are like a senior claim with a fixed promise but limited upside.',
-        reflectionQuestion: 'What is the main distinction between ordinary equity and preference shares?',
+        simpleExplanation: 'Stock prices usually reflect information, but they are not always perfectly accurate in real time.',
+        example: 'When a company announces a high-value acquisition, the share price adjusts quickly as investors revise expected cash flows and risk.',
+        analogy: 'Markets are like a large and informed crowd, though the crowd may sometimes overreact before the complete story is known.',
+        reflectionQuestion: 'Why does market efficiency matter for corporate finance?',
         options: [
-          'Preference shares usually have fixed dividends and rank above ordinary shares in priority',
-          'Ordinary shares have priority over preference shares in dividends',
-          'Preference shares always carry voting rights',
-          'Ordinary shares are legally debt instruments',
+          'Because it shapes how quickly prices reflect information and affect financing cost',
+          'Because it guarantees all prices are fair at all times',
+          'Because it eliminates business risk',
+          'Because it cancels the need for governance',
         ],
-        correctAnswer: 'Preference shares usually have fixed dividends and rank above ordinary shares in priority',
-        term: 'Equity vs Preference Shares',
+        correctAnswer: 'Because it shapes how quickly prices reflect information and affect financing cost',
+        term: 'Market Efficiency',
         researchPapers: [
           {
-            title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
-            authors: 'Modigliani and Miller',
-            year: '1958',
-            summary: 'Core analysis of financing claims, capital structure, and shareholder value.',
-            url: 'https://www.jstor.org/stable/10.2307/2550593',
-          },
-          {
-            title: 'Bankruptcy Costs and the Agency Costs of Debt',
-            authors: 'Jensen and Meckling',
-            year: '1976',
-            summary: 'Explains how financing structure interacts with firm value and managerial incentives.',
-            url: 'https://www.jstor.org/stable/10.2307/2788528',
+            title: 'The Efficient Capital Market: A Review of Theory and Empirical Work',
+            authors: 'Eugene F. Fama',
+            year: '1970',
+            summary: 'Seminal review of the efficient market hypothesis and empirical evidence.',
+            url: 'https://www.jstor.org/stable/2325486',
           },
         ],
       },
       {
         id: 'lesson-5',
-        title: 'Capital Structure Logic',
-        summary: 'Capital structure determines how the firm balances debt, equity, and hybrid claims to minimise financing costs while preserving value.',
+        title: 'Information Asymmetry',
+        summary: 'Managers often know more than outside investors, creating frictions in capital markets.',
         explanation: `
-          Capital structure is the balance between debt, equity, and hybrid securities that a firm uses to finance its assets. The financing mix matters because each source carries different risk, cost, and governance consequences. Debt tends to be cheaper because interest is tax-deductible and creditors rank ahead of equity holders. However, debt also increases financial distress risk and can constrain managerial flexibility.
+          Information asymmetry occurs when one party has more information than another. In corporate finance, managers and insiders typically know more about the firm’s quality, prospects, and risk than outside investors. This creates adverse selection and moral hazard problems in capital markets.
 
-          Equity is more expensive but less risky from the firm’s perspective because there is no mandatory payout. Ordinary equity also provides ownership and governance rights. Preference shares occupy an intermediate space, offering fixed income characteristics without the same insolvency exposure as debt.
+          The result is that markets may discount securities, raise the cost of capital, or demand more disclosure. In severe cases, information asymmetry can deter financing or force firms to adjust issuance terms. This is why corporate disclosure, auditing, and governance are central to financing decisions.
 
-          Firms therefore seek an optimal capital structure that balances the tax benefits of leverage against expected bankruptcy and agency costs. In a frictionless world, the Modigliani-Miller propositions suggest financing mix does not affect value, but real-world imperfections mean capital structure is a strategic decision with material consequences.
+          The concept also links directly to agency theory: where management and ownership are separated, the risk that managers act in their own interest rather than in the interests of investors becomes more significant when information is uneven.
         `,
-        simpleExplanation: 'Capital structure is the mix of financing instruments a company uses to support its investments.',
-        example: 'A highly levered firm may enjoy tax shields on debt but face greater default risk if operating conditions deteriorate.',
-        analogy: 'Capital structure is like choosing the balance of supports under a bridge: too little support is risky, but too much may be unnecessarily costly.',
-        reflectionQuestion: 'Why does debt sometimes lower the cost of capital even though it increases financial risk?',
+        simpleExplanation: 'When managers know more than investors, financing becomes less certain and often more expensive.',
+        example: 'A company may need to disclose material information carefully because poor disclosure can lead investors to discount the equity value.',
+        analogy: 'Information asymmetry is like a transaction in which one party knows the quality of the product while the other is guessing.',
+        reflectionQuestion: 'Why does information asymmetry matter in capital markets?',
         options: [
-          'Because debt is always cheaper than equity and never creates risk',
-          'Because interest payments are tax-deductible, but leverage also raises distress risk',
-          'Because debt does not require any repayment',
-          'Because creditors are entitled to ownership rights',
+          'Because it creates uncertainty that can affect the cost and availability of finance',
+          'Because it eliminates the need for financial reporting',
+          'Because it guarantees that all securities are fairly priced',
+          'Because it removes governance concerns',
         ],
-        correctAnswer: 'Because interest payments are tax-deductible, but leverage also raises distress risk',
-        term: 'Capital Structure',
+        correctAnswer: 'Because it creates uncertainty that can affect the cost and availability of finance',
+        term: 'Information Asymmetry',
         researchPapers: [
           {
-            title: 'Determinants of Capital Structure',
-            authors: 'Titman and Wessels',
-            year: '1988',
-            summary: 'Empirical evidence on how firms choose debt versus equity financing.',
-            url: 'https://www.jstor.org/stable/2771307',
+            title: 'The Market for “Lemons”: Quality Uncertainty and the Market Mechanism',
+            authors: 'George A. Akerlof',
+            year: '1970',
+            summary: 'Classic analysis of how information asymmetry distorts market outcomes.',
+            url: 'https://www.jstor.org/stable/1879431',
           },
         ],
       },
@@ -208,186 +185,172 @@ export const modules: Module[] = [
   {
     id: 'module-2',
     title: 'Module 2',
-    subtitle: 'Capital Markets',
+    subtitle: 'Equity, Preference Shares and Capital Structure',
     description:
-      'This module analyses how capital markets allocate funds, price risk, and discipline firms through investor expectations. It situates financing and valuation in the broader context of market efficiency, agency conflicts, and governance.',
-    researchPapers: [
-      {
-        title: 'The Efficient Capital Market: A Review of Theory and Empirical Work',
-        authors: 'Fama',
-        year: '1970',
-        summary: 'Seminal discussion of information efficiency and market pricing.',
-        url: 'https://www.jstor.org/stable/2325486',
-      },
-      {
-        title: 'The Market for “Lemons”: Quality Uncertainty and the Market Mechanism',
-        authors: 'Akerlof',
-        year: '1970',
-        summary: 'Shows how information asymmetry affects market prices and firm financing.',
-        url: 'https://www.jstor.org/stable/1879431',
-      },
-    ],
+      'This module analyses how firms choose between different claims on value: ordinary equity, preference shares, debt, and hybrid capital. It explains the trade-offs between ownership dilution, control rights, fixed claims, and the tax and risk consequences of leverage.',
     lessons: [
       {
         id: 'lesson-6',
-        title: 'Market Efficiency',
-        summary: 'Financial markets process information efficiently, but not necessarily perfectly or instantly.',
+        title: 'Ordinary Equity',
+        summary: 'Ordinary shareholders are residual claimants and typically have voting rights.',
         explanation: `
-          Market efficiency concerns the extent to which security prices reflect available information. In the strongest form, prices incorporate all public and private information, making it difficult for investors to consistently earn abnormal returns. In practice, markets are not perfectly efficient at all times, but they are sufficiently competitive that mispricing opportunities are often limited and short-lived.
+          Ordinary equity represents the most direct form of ownership in a corporation. Shareholders receive dividends only after all other claims have been met, and they bear the greatest residual risk. In exchange, they hold the potential for unlimited upside through capital appreciation and participation in firm growth.
 
-          The concept matters because corporate finance relies on market prices for valuation, investor expectations, and capital raising. Firms that issue securities in highly informative markets can often access finance at more competitive terms. Yet market efficiency does not imply perfect pricing; frictions such as noise, behavioural biases, illiquidity, and information asymmetry can create opportunities and distortions.
+          Ordinary equity is also the main source of voting power in many corporations. Shareholders can influence board elections and major strategic decisions, which gives them governance rights but also exposes the firm to market scrutiny and pressure for short-term performance.
+
+          Because ordinary equity is a residual claim, it is the most expensive form of capital in a typical corporate structure. Investors require a higher return for bearing this uncertainty, which is why cost of equity is often above the cost of debt.
         `,
-        simpleExplanation: 'Market prices often reflect information, but not always perfectly or immediately.',
-        example: 'A firm announcing a major acquisition may see its share price change quickly as investors revise expected cash flows and risk.',
-        analogy: 'Capital markets are like a highly informed crowd, though sometimes the crowd reacts before the full story is known.',
-        reflectionQuestion: 'How does market efficiency influence corporate financing decisions?',
+        simpleExplanation: 'Ordinary equity carries more uncertainty but also the greatest share of upside and governance control.',
+        example: 'A growth business may issue ordinary shares to attract equity investors who want to participate in long-term capital gains.',
+        analogy: 'Ordinary shares are like partnership claims with full upside and full residual risk.',
+        reflectionQuestion: 'Why is ordinary equity usually more expensive than debt?',
         options: [
-          'It guarantees the perfect valuation of every project',
-          'It constrains arbitrage and affects how quickly prices reflect information',
-          'It eliminates all uncertainty in capital markets',
-          'It increases the cost of capital for all firms',
+          'Because shareholders are residual claimants and bear more risk',
+          'Because debt always has higher returns',
+          'Because dividends are always fixed',
+          'Because voting rights create no financial cost',
         ],
-        correctAnswer: 'It constrains arbitrage and affects how quickly prices reflect information',
-        term: 'Market Efficiency',
+        correctAnswer: 'Because shareholders are residual claimants and bear more risk',
+        term: 'Ordinary Equity',
         researchPapers: [
           {
-            title: 'The Efficient Capital Market: A Review of Theory and Empirical Work',
-            authors: 'Fama',
-            year: '1970',
-            summary: 'Groundbreaking review of empirical evidence and theory behind efficient markets.',
-            url: 'https://www.jstor.org/stable/2325486',
+            title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
+            authors: 'Franco Modigliani and Merton H. Miller',
+            year: '1958',
+            summary: 'Core treatment of financing claims and the premium demanded by equity investors.',
+            url: 'https://www.jstor.org/stable/10.2307/2550593',
           },
         ],
       },
       {
         id: 'lesson-7',
-        title: 'Information Asymmetry',
-        summary: 'Managers often know more about the firm than outside investors, creating adverse selection and agency concerns.',
+        title: 'Preference Shares',
+        summary: 'Preference shares are hybrid claims with priority over ordinary shareholders but usually no voting rights.',
         explanation: `
-          Information asymmetry is central to corporate finance. Managers and insiders typically possess more information than outside investors about the firm’s true prospects, governance quality, and risk profile. This asymmetry creates frictions in securities markets and influences financing choices, disclosure requirements, and investor pricing.
+          Preference shares occupy a middle ground between debt and ordinary equity. They usually carry a fixed dividend rate and are often senior to ordinary shares in the payment of dividends and the distribution of proceeds in liquidation. However, they typically sit below debt holders in priority and usually lack voting rights.
 
-          When information is unevenly distributed, investors may distrust issuance terms and demand an information premium. This can increase the cost of externally raised capital and lead firms to prefer internal financing or carefully structured securities. The market for lemons described by Akerlof illustrates how uncertainty about quality can undermine trust in markets.
+          This makes preference shares attractive to firms that want to access capital without diluting control to the same extent as ordinary equity. They also appeal to investors seeking a more stable cash-flow profile than ordinary shares, but with less priority than debt holders.
 
-          Information asymmetry also connects to agency theory: managers may not fully align with outside investors, creating incentives to pursue private benefits or understate risk. This makes governance mechanisms, auditing, and disclosure crucial instruments in financial markets.
+          In capital structure terms, preference shares are often viewed as a hybrid instrument: they offer enhanced income certainty relative to ordinary shares but still expose the firm to fixed dividend commitments and a more complex financing structure.
         `,
-        simpleExplanation: 'When managers know more than investors, capital markets become less certain and more expensive to navigate.',
-        example: 'A firm may issue shares when it knows its prospects are weak, causing investors to discount the securities because of adverse selection.',
-        analogy: 'Information asymmetry is like trading in a market where one party has a hidden map while the other is guessing the route.',
-        reflectionQuestion: 'Why does information asymmetry matter for capital raising?',
+        simpleExplanation: 'Preference shares usually offer fixed dividends and priority over ordinary shareholders, but less upside and usually no voting rights.',
+        example: 'A mature company may issue preference shares instead of additional ordinary equity to raise capital without diluting control.',
+        analogy: 'Preference shares are like a senior claim that pays a fixed coupon but does not carry full ownership control.',
+        reflectionQuestion: 'What is the main difference between ordinary shares and preference shares?',
         options: [
-          'It always lowers the cost of capital for all firms',
-          'It creates uncertainty that can increase financing costs and reduce trust',
-          'It eliminates market risk',
-          'It guarantees investor protection',
+          'Preference shares normally carry fixed dividends and priority over ordinary shares',
+          'Ordinary shares are always less risky',
+          'Preference shares always have voting rights',
+          'Ordinary shares are debt instruments',
         ],
-        correctAnswer: 'It creates uncertainty that can increase financing costs and reduce trust',
-        term: 'Information Asymmetry',
+        correctAnswer: 'Preference shares normally carry fixed dividends and priority over ordinary shares',
+        term: 'Preference Shares',
         researchPapers: [
           {
-            title: 'The Market for “Lemons”: Quality Uncertainty and the Market Mechanism',
-            authors: 'George A. Akerlof',
-            year: '1970',
-            summary: 'Classic theory of how hidden information distorts market outcomes.',
-            url: 'https://www.jstor.org/stable/1879431',
+            title: 'Bankruptcy Costs and the Agency Costs of Debt',
+            authors: 'Michael C. Jensen and William H. Meckling',
+            year: '1976',
+            summary: 'Explains how financing claims shape the trade-offs between equity, debt, and hybrid securities.',
+            url: 'https://www.jstor.org/stable/10.2307/2788528',
           },
         ],
       },
       {
         id: 'lesson-8',
-        title: 'Agency Theory',
-        summary: 'Managers and shareholders may have divergent objectives, creating agency costs and governance challenges.',
+        title: 'Capital Structure',
+        summary: 'Capital structure is the mix of debt, equity, and hybrid capital a firm uses to finance assets.',
         explanation: `
-          Agency theory examines the conflicts that arise when agents act on behalf of principals. In corporations, managers act as agents for shareholders, but their objectives may not perfectly align with those of owners. Agency costs arise when managers pursue empire building, managerial perks, or overly conservative decisions that do not maximise shareholder value.
+          Capital structure is not merely a financing detail; it is one of the core strategic decisions in corporate finance. Firms choose among debt, ordinary equity, preference shares, and internally generated funds when allocating financing. Each source has different cost, risk, control, and flexibility consequences.
 
-          Corporate governance mechanisms are designed to reduce these frictions. Boards, incentive contracts, monitoring, audits, and shareholder rights align managerial behaviour with value creation. Leverage can also discipline managers by increasing the cost of poor decisions, but it can also exacerbate financial distress if used imprudently.
+          Debt is often cheaper because interest is tax-deductible and creditors enjoy priority claims. However, higher leverage increases the probability of financial distress and can constrain flexibility. Equity is more expensive but less risky from the firm’s viewpoint and does not create mandatory repayment obligations. Preference shares sit between these extremes, offering some of the benefits of fixed claims without the full contractual severity of debt.
 
-          The core insight is that governance is not a technical afterthought: it is central to financing and strategic decision-making. Without effective controls, the firm may fail to allocate capital to its highest-value uses.
+          The objective is to find the capital mix that minimises the weighted average cost of capital without creating unacceptable financial distress. This is the foundation of optimal capital structure theory.
         `,
-        simpleExplanation: 'Managers and owners do not always share the same objectives, so governance matters.',
-        example: 'A manager may pursue expansion despite weak returns because it increases personal prestige, even when shareholders would prefer capital discipline.',
-        analogy: 'Agency theory is like a principal giving power to an agent who may not always act in the principal’s best interests.',
-        reflectionQuestion: 'Why do corporations use governance mechanisms?',
+        simpleExplanation: 'Capital structure is the combination of debt, equity, and hybrid securities used to finance the firm.',
+        example: 'A business may issue debt for tax advantages but issue equity if it wants to avoid over-leveraging and preserve flexibility.',
+        analogy: 'Capital structure is like the design of a bridge: different materials have different strengths, costs, and failure risks.',
+        reflectionQuestion: 'Why is capital structure strategically important?',
         options: [
-          'To eliminate all market risk',
-          'To align managerial behaviour with shareholder interests',
-          'To guarantee higher dividends',
-          'To reduce corporate tax liabilities automatically',
+          'Because financing choices affect the cost of capital, risk, and firm value',
+          'Because debt always lowers risk',
+          'Because equity never has control implications',
+          'Because decline in leverage always increases value',
         ],
-        correctAnswer: 'To align managerial behaviour with shareholder interests',
-        term: 'Agency Theory',
+        correctAnswer: 'Because financing choices affect the cost of capital, risk, and firm value',
+        term: 'Capital Structure',
         researchPapers: [
           {
-            title: 'Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure',
-            authors: 'Jensen and Meckling',
-            year: '1976',
-            summary: 'Seminal work on agency conflicts and ownership structure.',
-            url: 'https://www.jstor.org/stable/10.2307/258011',
+            title: 'Determinants of Capital Structure',
+            authors: 'Sheridan Titman and Roberto Wessels',
+            year: '1988',
+            summary: 'Empirical analysis of why firms choose different financing mixes.',
+            url: 'https://www.jstor.org/stable/2771307',
           },
         ],
       },
       {
         id: 'lesson-9',
-        title: 'Dividend Policy',
-        summary: 'Dividend policy balances the desire to distribute cash to shareholders with the need to retain earnings for growth and investment.',
+        title: 'Agency Theory and Leverage',
+        summary: 'Leverage can create value but also magnify agency problems and financial distress.',
         explanation: `
-          Dividend policy is a key element of financial strategy. Firms must decide how much cash to distribute to shareholders versus retain internally for reinvestment. Retained earnings can fund future projects, but paying dividends can signal confidence and satisfy investor preferences for regular cash flows.
+          Agency theory explains why the interests of managers and owners may diverge. Managers may prefer growth, empire-building, or lower operational discipline if those actions increase personal prestige or reduce risk to themselves. Shareholders, however, want value creation and efficient capital allocation.
 
-          Under perfect capital markets, dividend policy may not affect firm value, but in practice investor taxation, signalling, liquidity preferences, and agency costs can make payout policy relevant. A stable dividend can reduce uncertainty for investors and enhance credibility, while a cut in dividends may signal deteriorating fundamentals.
+          Leverage disciplines managers by creating fixed obligations, which can reduce free cash flow and limit value-destroying expansion. But leverage also increases the cost of failure: if cash flows are weak, debt magnifies losses and raises the likelihood of distress. The same instrument that disciplines management can also intensify agency and bankruptcy costs.
 
-          In modern corporate finance, the ability to maintain an appropriate payout policy is a core test of financial discipline. It reflects the firm’s growth opportunities, earnings quality, and strategic priorities.
+          For this reason, the optimal use of leverage requires balancing the benefits of discipline and tax shields against the risk of financial distress and managerial misalignment.
         `,
-        simpleExplanation: 'Dividend policy is about how much profit the firm pays out versus how much it keeps for investment.',
-        example: 'A mature company with limited growth opportunities may prefer regular dividends, while a young growth firm may retain earnings to fund expansion.',
-        analogy: 'Dividend policy is like deciding whether to harvest returns now or reinvest them to grow the orchard.',
-        reflectionQuestion: 'Why might a firm retain earnings rather than distribute them as dividends?',
+        simpleExplanation: 'Debt can improve discipline but can also create distress and agency costs when leverage is excessive.',
+        example: 'A highly levered firm may perform well in good times but struggle sharply in a downturn if cash flows fall below debt service requirements.',
+        analogy: 'Leverage is like using a strong lever to move a heavy object: it can create movement, but a bad angle can tip the whole structure.',
+        reflectionQuestion: 'How can leverage create both discipline and risk?',
         options: [
-          'To reduce corporate taxes permanently',
-          'To finance profitable future investment opportunities',
-          'To avoid any shareholder communication',
-          'To lower the firm’s cost of debt automatically',
+          'By encouraging efficiency while also magnifying losses during poor performance',
+          'By guaranteeing tax benefits without downside',
+          'By eliminating all agency conflicts',
+          'By reducing the requirement for monitoring',
         ],
-        correctAnswer: 'To finance profitable future investment opportunities',
-        term: 'Dividend Policy',
+        correctAnswer: 'By encouraging efficiency while also magnifying losses during poor performance',
+        term: 'Agency Theory and Leverage',
         researchPapers: [
           {
-            title: 'Dividend Policy, Growth, and the Valuation of Shares',
-            authors: 'Walter',
-            year: '1963',
-            summary: 'Early theoretical approach linking dividend policy, growth, and share valuation.',
-            url: 'https://www.jstor.org/stable/2329986',
+            title: 'Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure',
+            authors: 'Michael C. Jensen and William H. Meckling',
+            year: '1976',
+            summary: 'Foundational analysis of agency conflicts and the separation of ownership and control.',
+            url: 'https://www.jstor.org/stable/10.2307/258011',
           },
         ],
       },
       {
         id: 'lesson-10',
-        title: 'Corporate Governance',
-        summary: 'Governance structures influence how firms manage risk, investment, and accountability to capital providers.',
+        title: 'Dividend Policy',
+        summary: 'Dividend policy determines whether the firm distributes profits or retains earnings for reinvestment.',
         explanation: `
-          Corporate governance refers to the system of rules, incentives, and oversight that governs the behaviour of managers and the board. It influences strategic decision-making, disclosure quality, risk management, and the alignment of managerial incentives with shareholder interests.
+          Dividend policy remains one of the most debated areas of corporate finance. Firms must decide how much cash to distribute to shareholders and how much to retain for investment. Retaining earnings can fund new projects, but dividend payments may signal confidence and satisfy investor demand for income.
 
-          Strong governance reduces agency costs and improves access to capital by lowering perceived risk. Weak governance allows managerial opportunism, increasing the risk premium demanded by investors and limiting the firm’s strategic options. The governance structure therefore affects both the cost and availability of finance.
+          In frictionless markets, dividend policy may not affect value, but in real markets it matters because of taxes, investor preferences, signalling, and agency concerns. Stable dividends can reduce uncertainty and build credibility, while cuts in payout may signal deterioration in expected performance.
 
-          In practice, governance issues are central to mergers, leverage, executive pay, board composition, and disclosure policy. Financial analysis must therefore evaluate not just accounting performance but also the underlying control architecture of the firm.
+          The correct policy reflects the firm’s growth opportunities, capital needs, and investor profile. Mature firms with lower reinvestment opportunities often distribute more cash; growth firms often retain more to finance expansion.
         `,
-        simpleExplanation: 'Governance quality shapes whether managers act in the interests of owners and investors.',
-        example: 'A firm with a robust independent board and transparent reporting is often able to raise finance at a lower cost than one with weak oversight.',
-        analogy: 'Corporate governance is like the steering system of a vehicle: without it, even a powerful engine may lead the firm off course.',
-        reflectionQuestion: 'Why is corporate governance relevant to finance?',
+        simpleExplanation: 'Dividend policy is about balancing cash payouts to shareholders against investments for the future.',
+        example: 'A mature utility company may pay stable dividends, while a new technology company often reinvests cash to fund growth.',
+        analogy: 'Dividend policy is like deciding whether to harvest returns now or reinvest them to grow the orchard.',
+        reflectionQuestion: 'Why might firms retain earnings rather than pay them out as dividends?',
         options: [
-          'Because it determines whether managerial decisions support long-term shareholder value',
-          'Because it reduces the need for financial analysis',
-          'Because it guarantees positive earnings',
-          'Because it always lowers the cost of debt',
+          'To fund future value-creating investment opportunities',
+          'Because all retained earnings are always tax-free',
+          'Because dividends are never relevant to shareholders',
+          'Because market prices ignore dividend policy',
         ],
-        correctAnswer: 'Because it determines whether managerial decisions support long-term shareholder value',
-        term: 'Corporate Governance',
+        correctAnswer: 'To fund future value-creating investment opportunities',
+        term: 'Dividend Policy',
         researchPapers: [
           {
-            title: 'The Corporate Governance Problem',
-            authors: 'Mayer',
-            year: '1997',
-            summary: 'Discussion of governance as a central issue in modern corporate control and finance.',
-            url: 'https://academic.oup.com/qje/article-abstract/82/1/41/1888598',
+            title: 'Dividend Policy, Growth, and the Valuation of Shares',
+            authors: 'James E. Walter',
+            year: '1963',
+            summary: 'Early theory linking dividend policy, growth, and share valuation.',
+            url: 'https://www.jstor.org/stable/2329986',
           },
         ],
       },
@@ -396,179 +359,172 @@ export const modules: Module[] = [
   {
     id: 'module-3',
     title: 'Module 3',
-    subtitle: 'Cost of Capital',
+    subtitle: 'Cost of Capital and Valuation',
     description:
-      'This module explores the calculation and interpretation of the cost of capital, showing how financing choices influence investment decisions and firm valuation.',
-    researchPapers: [
-      {
-        title: 'A Simple Positive Model of Capital Structure',
-        authors: 'Miller',
-        year: '1977',
-        summary: 'Incorporates tax effects and the trade-off between debt and equity financing.',
-        url: 'https://www.jstor.org/stable/2326484',
-      },
-    ],
+      'This module introduces the cost of capital and valuation frameworks used to estimate whether investments and securities are economically attractive and fairly priced.',
     lessons: [
       {
         id: 'lesson-11',
-        title: 'Weighted Average Cost of Capital',
-        summary: 'WACC blends the required returns on all sources of finance in proportion to their contribution to capital structure.',
+        title: 'Cost of Debt',
+        summary: 'The cost of debt reflects the return lenders require for providing finance and bearing default risk.',
         explanation: `
-          The weighted average cost of capital (WACC) is a benchmark return used to evaluate projects and investments. It reflects the average required return demanded by providers of both debt and equity, weighted by their market value proportions in the firm’s capital structure. WACC is central because it translates financing strategy into an investment hurdle rate.
+          The cost of debt is the effective rate paid by a firm on its borrowings, adjusted for any tax shield associated with interest payments. Debt is often cheaper than equity because lenders have priority claims and because interest is typically tax-deductible. However, debt also creates financial obligations that can increase distress risk.
 
-          A project should be undertaken only if its expected return exceeds the WACC, assuming comparable risk. This is the essence of value-based capital budgeting. However, WACC is not a static number: it changes with leverage, risk, interest rates, and capital market conditions. Thus, the cost of capital must be re-estimated when the firm’s financing mix or risk profile changes materially.
+          The cost of debt is influenced by credit quality, maturity structure, current interest rates, and the broader macroeconomic environment. A firm with stronger cash flows and lower leverage can often borrow at lower rates than a less stable business. As leverage rises, debt investors may demand a higher rate to compensate for greater default risk.
+
+          This concept is crucial because the cost of debt is embedded in the firm’s overall cost of capital and therefore in investment appraisal.
         `,
-        simpleExplanation: 'WACC is the blended cost of the debt and equity that finance the firm.',
-        example: 'If a company has 60% equity at 12% and 40% debt at 5%, its WACC may be around 9%, depending on tax effects and capital structure weights.',
-        analogy: 'WACC is like the average interest rate a firm must pay to all of its financial stakeholders.',
-        reflectionQuestion: 'Why is WACC used as a discount rate in capital budgeting?',
+        simpleExplanation: 'The cost of debt is the return lenders require for providing finance to the business.',
+        example: 'A highly rated company may borrow at a lower cost than a firm with weaker cash flows and higher business risk.',
+        analogy: 'Debt is like borrowing from a lender who demands a price for the risk of not being repaid on time.',
+        reflectionQuestion: 'Why is debt often cheaper than equity?',
         options: [
-          'Because it represents the minimum return required by capital providers',
-          'Because it always equals the inflation rate',
-          'Because it eliminates financing risk',
-          'Because it guarantees project profitability',
+          'Because debt holders have priority claims and interest is often tax deductible',
+          'Because debt holders never bear risk',
+          'Because debt issues always include voting rights',
+          'Because debt always has no maturity',
         ],
-        correctAnswer: 'Because it represents the minimum return required by capital providers',
-        term: 'WACC',
+        correctAnswer: 'Because debt holders have priority claims and interest is often tax deductible',
+        term: 'Cost of Debt',
         researchPapers: [
           {
-            title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
-            authors: 'Modigliani and Miller',
-            year: '1958',
-            summary: 'Foundational treatment of capital costs and investment evaluation.',
-            url: 'https://www.jstor.org/stable/10.2307/2550593',
+            title: 'A Simple Positive Model of Capital Structure',
+            authors: 'Merton H. Miller',
+            year: '1977',
+            summary: 'Important work on debt tax shields and the trade-offs in capital structure.',
+            url: 'https://www.jstor.org/stable/2326484',
           },
         ],
       },
       {
         id: 'lesson-12',
-        title: 'Cost of Debt',
-        summary: 'The cost of debt reflects the return lenders require for providing financing and bearing default risk.',
-        explanation: `
-          The cost of debt is the effective interest rate a firm pays on borrowed funds after adjusting for tax effects where applicable. It is relatively straightforward to estimate from bond yields or interest rates, but it varies according to credit quality, maturity structure, and macroeconomic conditions.
-
-          Debt is often less expensive than equity because creditors hold priority claims and are protected by contractual terms. The tax shield on interest payments further reduces the effective cost of debt. Nonetheless, leverage increases financial risk and may raise the cost of debt as default probability increases.
-
-          Financial managers assess the cost of debt carefully because excessive leverage can destabilise the firm. A firm with an efficient debt structure may reduce WACC, but one with too much debt may become more fragile and vulnerable to refinancing risk.
-        `,
-        simpleExplanation: 'The cost of debt is the required return lenders demand for financing the business.',
-        example: 'A firm with strong cash flows and low leverage may borrow at a lower rate than a firm with unstable earnings.',
-        analogy: 'Debt is like borrowing from a lender who wants a reliable repayment promise in exchange for a lower required rate.',
-        reflectionQuestion: 'Why is debt often cheaper than equity?',
-        options: [
-          'Because debt holders have priority claims and often benefit from tax shields',
-          'Because debt is risk-free',
-          'Because lenders always receive voting rights',
-          'Because firms are never required to repay debt',
-        ],
-        correctAnswer: 'Because debt holders have priority claims and often benefit from tax shields',
-        term: 'Cost of Debt',
-        researchPapers: [
-          {
-            title: 'A Simple Positive Model of Capital Structure',
-            authors: 'Miller',
-            year: '1977',
-            summary: 'Important work on the tax advantages of debt and capital structure trade-offs.',
-            url: 'https://www.jstor.org/stable/2326484',
-          },
-        ],
-      },
-      {
-        id: 'lesson-13',
         title: 'Cost of Equity',
         summary: 'The cost of equity is the return required by shareholders for bearing residual risk.',
         explanation: `
-          Equity investors are residual claimants. They receive what remains after all obligations to creditors and other claimants have been met, which means their returns are more uncertain than debt holders’ returns. Consequently, the cost of equity is typically higher than the cost of debt.
+          Equity is more complex than debt because shareholders stand last in the capital structure and therefore bear the greatest residual risk. They receive returns only after creditors and other claimants have been paid, which makes equity riskier and therefore more expensive.
 
-          Estimating the cost of equity often uses the capital asset pricing model, which links required return to the asset’s systematic risk. The expected return is the risk-free rate plus a premium for bearing market risk. This framework explains why firms in more volatile sectors face higher equity costs and why market conditions matter for financing decisions.
+          One standard way to estimate the cost of equity is the capital asset pricing model, which links required return to systematic risk. The model states that the expected return on a security equals the risk-free rate plus a market risk premium scaled by the asset’s beta. This provides a disciplined way to estimate the return required by equity investors.
 
-          The cost of equity is critical because it anchors the valuation of shares and the benchmark for corporate investments. Firms must generate enough return to cover equity holders’ required returns to preserve value and support sustainable growth.
+          In valuation, the cost of equity is central because it determines the required return on shareholders’ capital and therefore affects the value placed on equity claims.
         `,
-        simpleExplanation: 'The cost of equity is the return shareholders require for bearing residual risk.',
-        example: 'A technology company with volatile cash flows may have a higher cost of equity than a regulated utility with stable revenues.',
-        analogy: 'Equity is like a partner taking the last share of the upside but also absorbing the last loss.',
-        reflectionQuestion: 'Why is the cost of equity generally higher than the cost of debt?',
+        simpleExplanation: 'The cost of equity is the return demanded by shareholders for bearing residual risk.',
+        example: 'A high-beta technology company typically has a higher cost of equity than a utility with steadier cash flows.',
+        analogy: 'Equity is like a partnership claim: the upside is greater, but the risk of loss is also larger than for debt holders.',
+        reflectionQuestion: 'Why is the cost of equity normally above the cost of debt?',
         options: [
-          'Because equity holders face greater residual risk and no fixed contractual claim',
-          'Because debt is always more expensive',
-          'Because equity is tax-deductible',
-          'Because debt holders always receive ownership rights',
+          'Because equity holders are residual claimants and bear more risk',
+          'Because equity is always tax free',
+          'Because equity holders have fixed cash flows',
+          'Because debt holders do not require return',
         ],
-        correctAnswer: 'Because equity holders face greater residual risk and no fixed contractual claim',
+        correctAnswer: 'Because equity holders are residual claimants and bear more risk',
         term: 'Cost of Equity',
         researchPapers: [
           {
             title: 'Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk',
-            authors: 'Sharpe',
+            authors: 'William F. Sharpe',
             year: '1964',
-            summary: 'Classic CAPM derivation of the risk-return relationship.',
+            summary: 'Formalises the risk-return relationship for equity pricing under equilibrium conditions.',
             url: 'https://www.jstor.org/stable/10.2307/2977928',
           },
         ],
       },
       {
-        id: 'lesson-14',
-        title: 'Financial Distress',
-        summary: 'Financial distress occurs when the firm is unable to meet its obligations, creating costs that can destroy value.',
+        id: 'lesson-13',
+        title: 'Weighted Average Cost of Capital',
+        summary: 'WACC blends the costs of debt and equity in proportion to their capital weights.',
         explanation: `
-          Financial distress is a state in which a firm struggles to satisfy its contractual obligations or maintain liquidity. It can arise from weak earnings, excessive leverage, poor cash management, or macroeconomic shocks. The consequences include lost business opportunities, renegotiated contracts, legal costs, and reduced investment capacity.
+          The weighted average cost of capital (WACC) is the companywide benchmark used for evaluating projects and strategic investments. It combines the required returns on debt and equity according to their relative proportions in the firm’s financing mix. A firm’s WACC is therefore a function of both capital structure and market conditions.
 
-          Distress is not merely a consequence of poor performance; it is also shaped by capital structure and governance quality. High leverage magnifies downside risk, while weak operational controls may prevent the firm from adapting to adverse conditions. In severe cases, distress can culminate in insolvency or restructuring, with substantial losses for investors and stakeholders.
+          WACC is particularly important because it provides the discount rate used in discounted cash flow analysis. If a project’s expected return is above the WACC, it is likely to create value. If it falls below, it can destroy value even if accounting profits appear positive.
 
-          This is why corporate finance emphasises prudent leverage, liquidity planning, and scenario analysis. The objective is not simply to maximise debt financing but to manage the trade-off between tax benefits and potential distress costs.
+          In practice, WACC changes with leverage, required rates of return, tax environment, and macroeconomic conditions. That is why finance is not simply an accounting discipline; it is a dynamic analysis of risk and capital market pricing.
         `,
-        simpleExplanation: 'Financial distress is the condition in which a company cannot meet its obligations without creating serious damage to value.',
-        example: 'A highly leveraged retailer may be forced to sell assets or renegotiate terms during a recession if cash flows fall sharply.',
-        analogy: 'Financial distress is like maintaining a house with a heavy mortgage during a sharp income shock: the burden becomes unsustainable.',
-        reflectionQuestion: 'Why can excessive leverage reduce firm value?',
+        simpleExplanation: 'WACC is the blended return required by the firm’s debt and equity investors.',
+        example: 'A company with 60% equity at 12% and 40% debt at 5% might have a WACC materially below the cost of equity but above the cost of debt.',
+        analogy: 'WACC is like the average price a firm must pay to all of its capital providers for using their funds.',
+        reflectionQuestion: 'Why is WACC often used as the discount rate in project valuation?',
         options: [
-          'Because it reduces the likelihood of distress',
-          'Because it can increase the probability of financial distress and its associated costs',
-          'Because it guarantees tax benefits without risk',
-          'Because it prevents all shareholder losses',
+          'Because it reflects the required return of the firm’s capital providers',
+          'Because it is always constant for all firms',
+          'Because it ignores financing structure',
+          'Because it guarantees project success',
         ],
-        correctAnswer: 'Because it can increase the probability of financial distress and its associated costs',
-        term: 'Financial Distress',
+        correctAnswer: 'Because it reflects the required return of the firm’s capital providers',
+        term: 'WACC',
         researchPapers: [
           {
-            title: 'Bankruptcy Costs and the Agency Costs of Debt',
-            authors: 'Jensen and Meckling',
-            year: '1976',
-            summary: 'Shows how debt creates agency and distress costs that can reduce value.',
-            url: 'https://www.jstor.org/stable/10.2307/2788528',
+            title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
+            authors: 'Franco Modigliani and Merton H. Miller',
+            year: '1958',
+            summary: 'Foundational treatment of cost of capital and firm valuation.',
+            url: 'https://www.jstor.org/stable/10.2307/2550593',
+          },
+        ],
+      },
+      {
+        id: 'lesson-14',
+        title: 'Discounted Cash Flow Valuation',
+        summary: 'DCF valuation estimates a business or project by discounting expected future cash flows to present value.',
+        explanation: `
+          Discounted cash flow (DCF) is a core valuation method in corporate finance. It values an asset by forecasting the future cash flows it is expected to generate and then discounting those cash flows to the present using a rate appropriate to the risk of those cash flows.
+
+          This approach is especially useful where cash flows are predictable and linked to underlying operating performance. It connects directly to the time value of money and the cost of capital, thereby making valuation an explicit synthesis of financial theory and business strategy.
+
+          The key challenge is not only the arithmetic but also the assumptions. Forecast quality, terminal value, discount rate selection, and macroeconomic conditions materially affect the estimate.
+        `,
+        simpleExplanation: 'DCF values an investment by discounting future cash flows back to today using the appropriate required return.',
+        example: 'A project generating £200,000 annually for five years may be valued by discounting each year’s cash flow at the project’s required return.',
+        analogy: 'DCF is like translating a stream of future income into today’s money by accounting for timing and risk.',
+        reflectionQuestion: 'Why are expected future cash flows discounted when valuing a project?',
+        options: [
+          'Because money received later is worth less than money received now',
+          'Because accounting profit is always more relevant than cash flow',
+          'Because risk never matters in valuation',
+          'Because debt financing eliminates time value',
+        ],
+        correctAnswer: 'Because money received later is worth less than money received now',
+        term: 'Discounted Cash Flow',
+        researchPapers: [
+          {
+            title: 'The Theory of Investment Value',
+            authors: 'John Burr Williams',
+            year: '1938',
+            summary: 'Foundation text on discounting future cash flows to determine intrinsic value.',
+            url: 'https://archive.org/details/in.ernet.dli.2015.216200',
           },
         ],
       },
       {
         id: 'lesson-15',
-        title: 'Optimal Capital Structure',
-        summary: 'Optimal capital structure balances the tax advantages of debt against the increasing costs of financial distress.',
+        title: 'Net Present Value',
+        summary: 'NPV measures the value created by a project after accounting for the cost of capital.',
         explanation: `
-          The theory of optimal capital structure posits that firms do not seek to maximise leverage indiscriminately. Instead, they choose a financing mix that balances the tax benefits of debt with the costs of distress, agency problems, and loss of flexibility. This trade-off is central to modern corporate finance.
+          Net present value (NPV) is the most direct and theoretically coherent investment appraisal rule. It compares the present value of future inflows with the upfront cost of investment. When NPV is positive, the project is expected to create economic value; when it is negative, it is expected to destroy value under the chosen assumptions.
 
-          Historically, debt is attractive because interest lowers taxable income, but the more debt a firm carries, the more exposed it becomes to insolvency risk and the greater the likelihood of agency costs. As leverage rises, equity holders may demand a higher return and creditors may demand more protection. The result is a curved relationship between leverage and value.
+          The central insight is that value is created only if returns exceed the opportunity cost of capital. This is why NPV integrates both profitability and the risk-adjusted hurdle rate. It remains the benchmark test for capital budgeting in theory and practice.
 
-          Firms therefore evaluate the marginal benefits and marginal costs of additional debt. The optimal point is reached where the incremental tax shield from another unit of debt is offset by the additional expected distress cost.
+          However, firms must still assess realism, risk sensitivity, and strategic flexibility, because NPV depends on forecast assumptions and market conditions.
         `,
-        simpleExplanation: 'The optimal capital structure is the point where the benefits of leverage are balanced against the costs of financial risk.',
-        example: 'A firm may issue moderate debt to capture tax shields while maintaining enough liquidity to avoid distress during a downturn.',
-        analogy: 'Optimal capital structure is like balancing a scale: too much weight on one side creates instability, and too little leaves value on the table.',
-        reflectionQuestion: 'What is the central trade-off in the theory of optimal capital structure?',
+        simpleExplanation: 'NPV tells you whether a project adds value after considering the cost of capital.',
+        example: 'If a project costs £500,000 today and is worth £560,000 in present value terms, the NPV is £60,000.',
+        analogy: 'NPV is like comparing the total value of future gains with the initial price paid today.',
+        reflectionQuestion: 'What does a positive NPV indicate?',
         options: [
-          'Tax benefits of debt versus distress and agency costs',
-          'Higher dividends versus lower taxes only',
-          'Debt repayment versus equity dilution always',
-          'Operating leverage versus market efficiency',
+          'The project is expected to increase economic value',
+          'The project must always be accepted regardless of strategy',
+          'The project has zero operating risk',
+          'The project reduces the firm’s cost of debt',
         ],
-        correctAnswer: 'Tax benefits of debt versus distress and agency costs',
-        term: 'Optimal Capital Structure',
+        correctAnswer: 'The project is expected to increase economic value',
+        term: 'Net Present Value',
         researchPapers: [
           {
-            title: 'A Simple Positive Model of Capital Structure',
-            authors: 'Miller',
-            year: '1977',
-            summary: 'Framework for understanding how debt and equity balance tax and value effects.',
-            url: 'https://www.jstor.org/stable/2326484',
+            title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
+            authors: 'Franco Modigliani and Merton H. Miller',
+            year: '1958',
+            summary: 'Core foundation for linking valuation and investment decision rules to economic value.',
+            url: 'https://www.jstor.org/stable/10.2307/2550593',
           },
         ],
       },
@@ -577,179 +533,164 @@ export const modules: Module[] = [
   {
     id: 'module-4',
     title: 'Module 4',
-    subtitle: 'Valuation',
+    subtitle: 'Corporate Governance and Agency Theory',
     description:
-      'This module introduces valuation methods used to assess projects, equity, and firms. It links expected cash flows, discount rates, and risk to the price of assets and investment opportunities.',
-    researchPapers: [
-      {
-        title: 'Does the Stock Market Overreact?',
-        authors: 'De Bondt and Thaler',
-        year: '1985',
-        summary: 'Evidence on how prices may deviate from fundamental valuation under behavioural forces.',
-        url: 'https://www.jstor.org/stable/2327804',
-      },
-    ],
+      'This module explores how governance, incentives, and ownership structure affect managerial behaviour, strategic investing, and long-run firm value. It studies the agency problem and how governance mechanisms reduce value-destroying behaviour.',
     lessons: [
       {
         id: 'lesson-16',
-        title: 'Discounted Cash Flow',
-        summary: 'DCF valuation estimates value by discounting expected future cash flows to present value.',
+        title: 'Agency Theory',
+        summary: 'Agency theory examines conflicts between managers and owners when decision rights are separated from ownership.',
         explanation: `
-          Discounted cash flow (DCF) is a central valuation technique in corporate finance. It values an asset or project by computing the present value of expected future cash flows, using a discount rate aligned with the risk of those cash flows. The method integrates the time value of money, the cost of capital, and expected operating performance.
+          Agency theory addresses a core challenge of modern corporations: managers and shareholders may not have identical objectives. Managers may prefer empire-building, lower risk, or personal prestige, while shareholders focus on long-term value maximisation. This divergence creates agency costs.
 
-          In an investment context, DCF is used to estimate the net present value of a project. Asset value is estimated by forecasting future cash inflows and outflows, discounting them appropriately, and comparing the sum of present values to the initial cost. The method is especially useful when cash flows are predictable and linked to economic fundamentals.
+          These costs arise when managerial behaviour is not disciplined by properly aligned incentives or effective oversight. They can reduce profitability, distort capital allocation, and weaken investor trust. Governance mechanisms such as board oversight, executive incentives, audits, and market discipline are designed to align managerial behaviour with shareholder interests.
         `,
-        simpleExplanation: 'DCF values an asset by discounting expected future cash flows back to today.',
-        example: 'A project offering annual cash inflows of £200,000 for five years may be valued by discounting each year’s cash flow at the firm’s required return.',
-        analogy: 'DCF is like estimating the current worth of a future stream of payments by accounting for its delayed timing and risk.',
-        reflectionQuestion: 'Why are future cash flows discounted in valuation?',
+        simpleExplanation: 'Agency theory explains why managers and owners may not always act in the same way.',
+        example: 'A manager may approve an acquisition with weak returns to increase prestige, even if it destroys shareholder value.',
+        analogy: 'Agency costs are like the lost value that appears when an agent is not fully accountable to the owner of the resource.',
+        reflectionQuestion: 'Why do corporations need governance mechanisms?',
         options: [
-          'Because future amounts are always smaller than current amounts',
-          'Because money has time value and risk must be reflected in the discount rate',
-          'Because inflation eliminates the need to compare amounts',
-          'Because accounting profit is more important than cash flow',
+          'To align manager incentives with shareholder value',
+          'Because all managers are perfectly aligned already',
+          'To remove the need for valuation',
+          'Because governance eliminates all risk',
         ],
-        correctAnswer: 'Because money has time value and risk must be reflected in the discount rate',
-        term: 'Discounted Cash Flow',
+        correctAnswer: 'To align manager incentives with shareholder value',
+        term: 'Agency Theory',
         researchPapers: [
           {
-            title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
-            authors: 'Modigliani and Miller',
-            year: '1958',
-            summary: 'Foundational basis for discounting and valuation under uncertainty.',
-            url: 'https://www.jstor.org/stable/10.2307/2550593',
+            title: 'Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure',
+            authors: 'Michael C. Jensen and William H. Meckling',
+            year: '1976',
+            summary: 'Seminal work on agency costs and the separation of ownership and control.',
+            url: 'https://www.jstor.org/stable/10.2307/258011',
           },
         ],
       },
       {
         id: 'lesson-17',
-        title: 'Net Present Value',
-        summary: 'NPV measures the value added by a project by comparing present value of inflows with initial investment.',
+        title: 'Board Oversight',
+        summary: 'Boards monitor management, challenge strategy, and help align incentives with long-term value creation.',
         explanation: `
-          Net present value (NPV) is perhaps the clearest decision criterion in investment appraisal. It subtracts the present value of costs from the present value of expected benefits. If NPV is positive, the project creates value; if it is negative, it destroys value under the selected assumptions.
+          Board oversight is the main governance mechanism through which principals supervise agents. The board is responsible for reviewing strategy, monitoring executive performance, approving major investments, and overseeing risk management. Effective boards are independent, involved, and willing to challenge management when the firm’s strategy or incentives diverge from long-term value maximisation.
 
-          NPV integrates both timing and risk, making it a powerful tool for strategic capital allocation. It is more theoretically rigorous than simple payback or accounting-return metrics because it estimates economic value rather than short-term accounting performance.
-
-          Limitations remain: forecasts may be inaccurate, discount rates may change, and strategic flexibility may be overlooked. Yet NPV remains the benchmark in rigorous corporate finance practice.
+          Strong governance improves access to capital by increasing investor confidence. Weak governance, by contrast, raises uncertainty and can increase the required return demanded by investors because agencies and opportunism are more likely to reduce value.
         `,
-        simpleExplanation: 'NPV tells you whether a project adds value after considering the cost of capital.',
-        example: 'If a project requires £500,000 today and is worth £560,000 in present value terms, its NPV is £60,000.',
-        analogy: 'NPV is like calculating whether the future gains from an investment exceed the price paid today.',
-        reflectionQuestion: 'What does a positive NPV imply?',
+        simpleExplanation: 'The board acts as a critical mechanism for monitoring management and protecting shareholder interests.',
+        example: 'A board may reject an expansion plan if it does not clear the firm’s required return threshold or if the risk profile is unacceptable.',
+        analogy: 'The board is like a steering committee that keeps the firm on course and prevents drift from the strategic plan.',
+        reflectionQuestion: 'Why is board oversight important in corporate finance?',
         options: [
-          'The project is likely to destroy value',
-          'The project is expected to add value after accounting for the cost of capital',
-          'The project will always generate accounting profit',
-          'The project is risk-free',
+          'Because it reduces agency problems and improves strategic accountability',
+          'Because it guarantees higher profits',
+          'Because it eliminates lawsuits',
+          'Because it guarantees market efficiency',
         ],
-        correctAnswer: 'The project is expected to add value after accounting for the cost of capital',
-        term: 'Net Present Value',
+        correctAnswer: 'Because it reduces agency problems and improves strategic accountability',
+        term: 'Board Oversight',
         researchPapers: [
           {
-            title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
-            authors: 'Modigliani and Miller',
-            year: '1958',
-            summary: 'Critical framework connecting investment decisions to value creation.',
-            url: 'https://www.jstor.org/stable/10.2307/2550593',
+            title: 'The Cadbury Report',
+            authors: 'Cadbury Committee',
+            year: '1992',
+            summary: 'Landmark governance framework on board effectiveness and shareholder accountability.',
+            url: 'https://www.ecgi.global/content/cadbury-report',
           },
         ],
       },
       {
         id: 'lesson-18',
-        title: 'Equity Valuation',
-        summary: 'Equity value is the present value of expected future cash flows distributed to shareholders.',
+        title: 'Financial Distress',
+        summary: 'Financial distress occurs when a firm cannot meet obligations and the costs of distress can destroy economic value.',
         explanation: `
-          Equity valuation estimates the intrinsic value of a company’s shares by discounting expected future residual cash flows to shareholders. This can be done using dividend discount models, free cash flow to equity approaches, or comparables. The goal is to determine whether market prices are fair relative to fundamentals.
+          Financial distress is a central concern in capital structure analysis. It occurs when a firm is unable to meet its obligations or maintain required liquidity. Distress can arise from weak cash flows, poor strategic choices, high leverage, or unanticipated macroeconomic shocks.
 
-          Ordinary equity is riskier than debt because shareholders are residual claimants. As a result, equity valuation must reflect both expected growth and risk. A firm with strong cash flows and durable competitive advantages can command a higher valuation, but if growth opportunities are weak or uncertainty is elevated, the equity discount rate and terminal value assumptions matter significantly.
-
-          For firm managers, equity valuation is not purely academic; it influences fundraising, strategic transaction decisions, and market perception of value creation.
+          The costs of distress include lost investment opportunities, reduced flexibility, legal and restructuring costs, and reputational damage. These costs can be severe even if the firm is not formally insolvent. This is why leverage must be managed carefully: higher debt can increase expected returns to equity, but it also increases the downside risk to the whole capital structure.
         `,
-        simpleExplanation: 'Equity value is the present value of future returns available to shareholders after obligations are met.',
-        example: 'A company with stable dividends may be valued using a dividend discount model, while a high-growth firm may be valued using free cash flow to equity or comparable multiples.',
-        analogy: 'Equity valuation is like pricing a claim on the remaining profits after all other financial claims have been satisfied.',
-        reflectionQuestion: 'Why does equity valuation require a higher discount rate than debt valuation?',
+        simpleExplanation: 'Financial distress is the condition in which a firm struggles to meet its commitments, creating severe value losses.',
+        example: 'A highly levered retailer may be forced to sell assets or renegotiate terms during a downturn if cash flows fall below debt obligations.',
+        analogy: 'Financial distress is like a building with too much weight on the foundation: the structure may still stand for a while, but the risk of collapse rises materially.',
+        reflectionQuestion: 'Why can excessive leverage reduce firm value?',
         options: [
-          'Because equity claims are residual and therefore riskier',
-          'Because debt holders always have greater upside',
-          'Because dividend payouts are guaranteed',
-          'Because equity is less liquid than debt',
+          'Because it raises the probability of distress and its associated costs',
+          'Because leverage has no tax benefits',
+          'Because equity is always risk-free',
+          'Because debt never creates control issues',
         ],
-        correctAnswer: 'Because equity claims are residual and therefore riskier',
-        term: 'Equity Valuation',
+        correctAnswer: 'Because it raises the probability of distress and its associated costs',
+        term: 'Financial Distress',
         researchPapers: [
           {
-            title: 'Discounted Cash Flow: A Theory of the Valuation of Firms',
-            authors: 'Brealey and Myers',
+            title: 'Bankruptcy Costs and the Agency Costs of Debt',
+            authors: 'Michael C. Jensen and William H. Meckling',
             year: '1976',
-            summary: 'Standard treatment of valuation and discounting in finance.',
-            url: 'https://www.amazon.com/Principles-Corporate-Finance-Brealey-Myers/dp/0077861668',
+            summary: 'Shows how leverage creates distress and agency costs that affect firm value.',
+            url: 'https://www.jstor.org/stable/10.2307/2788528',
           },
         ],
       },
       {
         id: 'lesson-19',
-        title: 'Strategic Investment Decisions',
-        summary: 'Investment decisions must balance value creation, strategic fit, and risk-adjusted return.',
+        title: 'Strategic Risk and Capital Allocation',
+        summary: 'Strategic risk reflects the possibility that the firm’s choices do not generate expected returns or competitive advantage.',
         explanation: `
-          Strategic investment decisions are not made solely on accounting returns. They require an analysis of expected cash flows, competitive positioning, execution risk, and capital intensity. Projects must be assessed relative to strategic objectives, timing, and capital constraints.
+          Strategic risk is the uncertainty surrounding the firm’s business decisions and competitive position. It includes the risk that a chosen strategy fails to generate the expected operating cash flows, that a market is misread, or that execution is weaker than expected.
 
-          Corporate finance frames these decisions around the expected net present value of future cash flows and the opportunity cost of capital. A project that looks attractive in isolation may destroy value if it requires capital that could be deployed elsewhere or if it increases the firm’s risk profile beyond tolerable levels.
+          This matters because financing and investment decisions are ultimately about economic value. A project may look attractive on the surface but still destroy value if the strategic logic is weak or if competitive barriers are poor. Strategic risk therefore sits alongside financial risk in determining acceptable investment thresholds.
 
-          Consequently, finance and strategy are interdependent. Good strategic choices create sustainable competitive advantage, while weak investment discipline weakens value creation and undermines shareholder confidence.
+          Capital allocation is only as strong as the strategic assumptions behind it. A disciplined capital allocation process must evaluate both the expected returns and the likelihood that those returns will be achieved.
         `,
-        simpleExplanation: 'Strategic investment must create value not just growth, and it must be judged against the firm’s required return.',
-        example: 'A firm may reject a high-revenue project if it requires too much capital, adds excessive risk, or generates lower risk-adjusted returns than alternatives.',
-        analogy: 'Strategic investment is like choosing the right crop for a field, not simply the crop with the largest yield in one season.',
-        reflectionQuestion: 'Why do strategic investment decisions require more than accounting profit analysis?',
+        simpleExplanation: 'Strategic risk is the uncertainty that a chosen market or business strategy will not generate the expected returns.',
+        example: 'A firm may enter a market with high revenue potential but low defensibility, leading to weak long-term returns.' ,
+        analogy: 'Strategic risk is like choosing a route across difficult terrain without knowing whether the path is sustainable or simply looks promising on paper.',
+        reflectionQuestion: 'Why does strategic risk matter for investment decisions?',
         options: [
-          'Because economic value depends on the risk-adjusted return and opportunity cost of capital',
-          'Because market share automatically guarantees value',
-          'Because accounting profit is irrelevant in all cases',
-          'Because all strategic projects are risk-free',
+          'Because it affects the cash flows and value that projects actually generate',
+          'Because it guarantees higher margins',
+          'Because it reduces the need for governance',
+          'Because it always lowers firm risk',
         ],
-        correctAnswer: 'Because economic value depends on the risk-adjusted return and opportunity cost of capital',
-        term: 'Strategic Investment',
+        correctAnswer: 'Because it affects the cash flows and value that projects actually generate',
+        term: 'Strategic Risk',
         researchPapers: [
           {
-            title: 'The Relationship between Investment and Financing Decisions',
-            authors: 'Brealey and Myers',
-            year: '1984',
-            summary: 'Broad finance treatment of strategic investment under uncertainty.',
-            url: 'https://www.jstor.org/stable/2327667',
+            title: 'Competitive Strategy',
+            authors: 'Michael E. Porter',
+            year: '1980',
+            summary: 'Classic analysis of competitive advantage and strategic choice under uncertainty.',
+            url: 'https://www.isc.hbs.edu/strategy/strategy-bibliography.html',
           },
         ],
       },
       {
         id: 'lesson-20',
-        title: 'Market Signals and Capital Raising',
-        summary: 'Financial markets interpret issuance decisions as signals about firm quality, expectations, and risk.',
+        title: 'Value Maximisation and Corporate Purpose',
+        summary: 'The purpose of financial management is not simply to grow the firm, but to maximise long-term economic value for owners and stakeholders.',
         explanation: `
-          Capital raising is not just a financing exercise; it is also a signal to the market. The choice of securities, timing, and issuance terms can communicate managerial beliefs about future performance and risk. Investors interpret these decisions in light of information asymmetry and governance quality.
+          The central objective of corporate finance is value maximisation. This requires a disciplined approach to capital allocation, financing, governance, and risk-taking. It is not enough to pursue growth in volume or complexity if the returns do not exceed the cost of capital.
 
-          For instance, a firm issuing equity during a period of weak expectations may be perceived as signalling that the shares are overvalued, while debt issuance may signal confidence in stable cash flows. These signals can influence the market price of securities and the firm’s future cost of capital.
-
-          Strategic financing therefore requires understanding how markets interpret signals and what information is being conveyed. Value creation depends not only on raising capital, but on doing so under terms that preserve confidence and align with the firm’s fundamentals.
+          Value maximisation must therefore be interpreted in a long-term and economically rigorous way. It requires managers to weigh strategic opportunity against risk, financial flexibility, and governance quality. In this sense, finance is closely tied to stewardship: the firm succeeds not by short-term opportunism but by sustainable value creation over time.
         `,
-        simpleExplanation: 'The way a firm raises capital can communicate important information to the market.',
-        example: 'A company issuing equity during a downturn may be interpreted as a sign of limited internal opportunities or poor timing.',
-        analogy: 'Capital raising is like sending a signal to investors about how confident the firm is in what it knows about the future.',
-        reflectionQuestion: 'Why can financing choices be interpreted as signals?',
+        simpleExplanation: 'A firm should pursue projects and policies that increase long-term economic value rather than appearance or short-term growth.',
+        example: 'A firm may avoid expansion into a low-return market if the capital required would generate less value than alternative projects.',
+        analogy: 'Value maximisation is like investing in the project that produces the best net gain rather than the one that looks largest on paper.',
+        reflectionQuestion: 'What is the objective of value maximisation?',
         options: [
-          'Because investors infer information about risk and management expectations from issuance decisions',
-          'Because markets always ignore financing decisions',
-          'Because debt issuance is always less informative than equity',
-          'Because all firms issue securities only to raise money',
+          'To increase long-term economic value for owners and stakeholders',
+          'To pursue all growth opportunities regardless of return',
+          'To eliminate all risk from the corporate portfolio',
+          'To maximise accounting revenue without regard to capital cost',
         ],
-        correctAnswer: 'Because investors infer information about risk and management expectations from issuance decisions',
-        term: 'Market Signals',
+        correctAnswer: 'To increase long-term economic value for owners and stakeholders',
+        term: 'Value Maximisation',
         researchPapers: [
           {
-            title: 'A Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure',
-            authors: 'Jensen and Meckling',
-            year: '1976',
-            summary: 'Core source for understanding incentives and informational asymmetry in firms.',
-            url: 'https://www.jstor.org/stable/10.2307/258011',
+            title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
+            authors: 'Franco Modigliani and Merton H. Miller',
+            year: '1958',
+            summary: 'Seminal analysis of value creation and investment efficiency in firms.',
+            url: 'https://www.jstor.org/stable/10.2307/2550593',
           },
         ],
       },
@@ -758,180 +699,162 @@ export const modules: Module[] = [
   {
     id: 'module-5',
     title: 'Module 5',
-    subtitle: 'Governance and Strategy',
+    subtitle: 'Valuation, Strategy and Long-Term Stewardship',
     description:
-      'This final module integrates the theory of corporate finance with governance, strategic control, and value-maximising decision-making under uncertainty.',
-    researchPapers: [
-      {
-        title: 'Corporate Governance and the Board: An Overview',
-        authors: 'Cadbury Report',
-        year: '1992',
-        summary: 'Landmark governance framework for accountability and board effectiveness.',
-        url: 'https://www.ecgi.global/content/cadbury-report',
-      },
-      {
-        title: 'Agency Costs of Free Cash Flow, Corporate Finance, and Takeovers',
-        authors: 'Jensen',
-        year: '1986',
-        summary: 'Classic analysis of managerial incentives and the role of discipline in value creation.',
-        url: 'https://www.jstor.org/stable/3890432',
-      },
-    ],
+      'This module integrates valuation, financing, governance, and strategy to explain how firms sustain value creation over time. It focuses on the disciplined allocation of capital under uncertainty and the role of stewardship in long-term growth.',
     lessons: [
       {
         id: 'lesson-21',
-        title: 'Agency Costs',
-        summary: 'Agency costs arise when managerial decisions diverge from the interests of shareholders and other claimants.',
+        title: 'Equity Valuation',
+        summary: 'Equity value is the present value of the future cash flows available to shareholders.',
         explanation: `
-          Agency costs are incurred when managers pursue objectives that do not fully align with shareholder value maximisation. These may include overinvestment, quiet life behaviour, excessive perks, or strategic choices that protect managerial interests rather than create value. The costs can reduce both operating efficiency and market valuation.
+          Equity valuation is the process of estimating the value of a company’s shares by discounting expected future cash flows to equity holders. This approach requires forecasts of dividends, free cash flow to equity, or residual earnings, together with a cost of equity that reflects shareholder risk.
 
-          Corporate finance addresses agency problems through corporate governance, incentive contracts, board oversight, and market discipline. By aligning incentives, firms can reduce wastage and improve capital allocation decisions. Agency theory therefore links the structure of ownership, the board, and managerial incentives to financial performance and value creation.
+          Unlike debt, equity is a residual claim. That means valuation must reflect growth expectations, uncertainty, and the risk attached to future returns. The market price of equity can diverge from intrinsic value when optimism, pessimism, or information asymmetry becomes significant, which is why valuation is both analytical and interpretive.
         `,
-        simpleExplanation: 'Agency costs are the losses created when managers act in ways that do not maximise owner value.',
-        example: 'A manager might expand into unrelated businesses to build empire and prestige even if the returns are below the firm’s cost of capital.',
-        analogy: 'Agency costs are like the waste that appears when a worker is not fully accountable to the owners of the business.',
-        reflectionQuestion: 'Why do agency costs matter for value creation?',
+        simpleExplanation: 'Equity value reflects the present value of the future returns available to shareholders after other claims are met.',
+        example: 'A fast-growing company may command a high equity value if its future free cash flows are expected to grow strongly.',
+        analogy: 'Equity valuation is like pricing the claim on the remaining profits after all debts and fixed obligations are paid.',
+        reflectionQuestion: 'Why does equity valuation require a higher discount rate than debt valuation?',
         options: [
-          'Because they represent value lost to poor managerial incentives',
-          'Because they always increase tax liabilities',
-          'Because they guarantee higher returns',
-          'Because they reduce the need for capital budgeting',
+          'Because equity is a residual claim and therefore riskier than debt',
+          'Because debt always has higher returns',
+          'Because dividends are risk-free',
+          'Because equity is never affected by growth',
         ],
-        correctAnswer: 'Because they represent value lost to poor managerial incentives',
-        term: 'Agency Costs',
+        correctAnswer: 'Because equity is a residual claim and therefore riskier than debt',
+        term: 'Equity Valuation',
         researchPapers: [
           {
-            title: 'Agency Costs of Free Cash Flow, Corporate Finance, and Takeovers',
-            authors: 'Jensen',
-            year: '1986',
-            summary: 'Core work on self-interested managerial behaviour and value destruction.',
-            url: 'https://www.jstor.org/stable/3890432',
+            title: 'The Theory of Investment Value',
+            authors: 'John Burr Williams',
+            year: '1938',
+            summary: 'Classic foundation for equity valuation using discounted cash flows and expected future returns.',
+            url: 'https://archive.org/details/in.ernet.dli.2015.216200',
           },
         ],
       },
       {
         id: 'lesson-22',
-        title: 'Board Oversight',
-        summary: 'Effective boards monitor managers, shape strategy, and ensure accountability to shareholders and creditors.',
+        title: 'Strategic Investment Decisions',
+        summary: 'Firms should invest only when strategic opportunity and economic return align with the firm’s required return.',
         explanation: `
-          Board oversight is a central mechanism in modern governance. Boards are expected to review performance, challenge strategy, supervise risk management, and ensure that managerial incentives are aligned with long-term value creation. Effective boards provide independent challenge rather than passive endorsement of management decisions.
+          Strategic investment decisions are among the most important determinants of long-term value. The firm must compare the expected economic return of alternative uses of capital against the opportunity cost of that capital and against strategic fit. The right decision is not simply the largest project or the fastest growth plan; it is the investment that maximises net present value and contributes to sustainable competitive advantage.
 
-          In corporate finance, the board’s relevance goes beyond oversight. It influences capital allocation, financing choices, risk appetite, and strategic execution. Strong governance improves confidence among investors and can reduce the cost of capital, while weak governance can increase uncertainty and undermine investor trust.
+          This is why capital budgeting cannot be separated from strategy. Financial returns, competitive position, and execution risk are intertwined. A project may expand revenue but still destroy value if it requires too much capital, carries excessive risk, or is inconsistent with the firm’s strategic capabilities.
         `,
-        simpleExplanation: 'The board is responsible for holding management accountable and monitoring major strategic decisions.',
-        example: 'A board may question an acquisition if the expected return is below the firm’s cost of capital or if the strategic rationale is weak.',
-        analogy: 'Board oversight is like a steering committee ensuring the company stays on the correct course.',
-        reflectionQuestion: 'What is the role of board oversight in finance?',
+        simpleExplanation: 'Strong investment decisions are those that create value while fitting the firm’s competitive and strategic position.',
+        example: 'A company may avoid a large expansion if the required return is high and the market position is weak, even if revenue growth appears attractive.',
+        analogy: 'Strategic investment is like choosing the best crop for a field rather than simply the crop with the largest apparent yield.',
+        reflectionQuestion: 'Why do firms need to evaluate strategic investments beyond accounting profit?',
         options: [
-          'To guarantee immediate profitability',
-          'To monitor management and reduce agency problems',
-          'To replace all market-based discipline',
-          'To eliminate all financing risk',
+          'Because economic value depends on risk-adjusted return and strategic fit',
+          'Because accounting rules automatically determine the right investment',
+          'Because growth alone creates value in all cases',
+          'Because strategic opportunities are never risky',
         ],
-        correctAnswer: 'To monitor management and reduce agency problems',
-        term: 'Board Oversight',
-        researchPapers: [
-          {
-            title: 'Cadbury Report',
-            authors: 'Cadbury Committee',
-            year: '1992',
-            summary: 'Foundational governance report on the role and scope of board accountability.',
-            url: 'https://www.ecgi.global/content/cadbury-report',
-          },
-        ],
-      },
-      {
-        id: 'lesson-23',
-        title: 'Strategic Risk',
-        summary: 'Strategic risk reflects the uncertainty surrounding management decisions, competitive positioning, and execution quality.',
-        explanation: `
-          Strategic risk is the risk that the firm’s choices about market position, expansion, innovation, and execution fail to generate expected returns. Unlike purely financial risk, strategic risk is linked to business model quality, competition, regulation, and managerial judgment.
-
-          In corporate finance, strategic risk matters because it affects operating cash flows, the firm’s expected growth, and the discount rate applied to those cash flows. A company may be well financed but still destroy value if it enters markets in which competitive advantages are weak or if management misjudges execution risk.
-
-          Consequently, firms need disciplined strategic planning, scenario analysis, and robust capital allocation frameworks. Financial discipline must ultimately support strategic quality rather than merely preserve balance-sheet stability.
-        `,
-        simpleExplanation: 'Strategic risk captures the possibility that a chosen strategy fails to create expected value.',
-        example: 'A firm entering a crowded market may fail to earn returns above its cost of capital despite high reported revenue growth.',
-        analogy: 'Strategic risk is like choosing a path across rough terrain without knowing whether the route is sustainable.',
-        reflectionQuestion: 'Why is strategic risk relevant to corporate finance?',
-        options: [
-          'Because it affects the cash flows and value that investments generate',
-          'Because it replaces the need for capital budgeting',
-          'Because it guarantees stronger growth',
-          'Because it lowers the firm’s cost of debt permanently',
-        ],
-        correctAnswer: 'Because it affects the cash flows and value that investments generate',
-        term: 'Strategic Risk',
+        correctAnswer: 'Because economic value depends on risk-adjusted return and strategic fit',
+        term: 'Strategic Investment',
         researchPapers: [
           {
             title: 'Competitive Strategy',
-            authors: 'Porter',
+            authors: 'Michael E. Porter',
             year: '1980',
-            summary: 'Classic strategic framework for understanding competitive advantage and risk.',
+            summary: 'Framework for connecting competitive advantage with strategic value creation.',
             url: 'https://www.isc.hbs.edu/strategy/strategy-bibliography.html',
           },
         ],
       },
       {
-        id: 'lesson-24',
-        title: 'Value Maximisation',
-        summary: 'The objective of corporate finance is to maximise long-term value for owners by allocating capital efficiently and managing risk carefully.',
+        id: 'lesson-23',
+        title: 'Capital Raising and Market Signals',
+        summary: 'The way a firm raises finance communicates information about its expected performance and risk.',
         explanation: `
-          Value maximisation is the central objective of corporate finance. It requires firms to allocate capital to opportunities that generate returns above required rates of return, manage risk prudently, and maintain financial flexibility. This objective not only guides investment but also informs financing, governance, and strategic choices.
+          Capital raising is not only a financing act; it is also a communication event. Investors interpret the choice of securities, timing, and structure as signals about the firm’s expectations and prospects. When the firm issues securities, the market forms inferences about investment opportunities, risk, and management credibility.
 
-          Value maximisation is not simply a slogan; it is the framework through which firms assess trade-offs between growth, risk, liquidity, and long-term sustainability. It distinguishes between projects that improve shareholder wealth and those that satisfy managerial preferences without generating economic surplus.
+          For example, issuing equity may signal weakness if the market believes management is capitalising on temporarily inflated share prices. Debt issuance can signal confidence in stable cash flows but also raises the risk of financial distress. The interaction between market perception and financing policy is therefore central to corporate finance.
         `,
-        simpleExplanation: 'The firm should pursue actions that increase long-term economic value rather than short-term appearances.',
-        example: 'A company may reject expansion into a low-margin market if it generates weak returns relative to capital costs and risk.',
-        analogy: 'Value maximisation is like choosing the investment that yields the best net gain, not simply the one that looks most impressive on paper.',
-        reflectionQuestion: 'What is the objective of value maximisation?',
+        simpleExplanation: 'The financing choice itself conveys information to the market about management expectations and internal conditions.',
+        example: 'A firm that issues equity during a period of high share prices may be viewed cautiously if investors suspect timing motives or poor internal opportunities.',
+        analogy: 'Financing choices are like a signal sent to the market about the confidence and knowledge of management.',
+        reflectionQuestion: 'Why may financing choices be interpreted as signals?',
         options: [
-          'To increase the long-term economic value of the firm for owners',
-          'To maximise accounting earnings at all costs',
-          'To reduce market competition permanently',
-          'To avoid all risk in every strategy',
+          'Because investors infer information about risk, confidence, and opportunity from issuance decisions',
+          'Because all capital raising is fully transparent',
+          'Because debt and equity are always equivalent',
+          'Because markets ignore financing choices',
         ],
-        correctAnswer: 'To increase the long-term economic value of the firm for owners',
-        term: 'Value Maximisation',
+        correctAnswer: 'Because investors infer information about risk, confidence, and opportunity from issuance decisions',
+        term: 'Capital Raising and Market Signals',
         researchPapers: [
           {
-            title: 'The Cost of Capital, Corporation Finance and the Theory of Investment',
-            authors: 'Modigliani and Miller',
-            year: '1958',
-            summary: 'Foundational model linking financing and investment to value creation.',
-            url: 'https://www.jstor.org/stable/10.2307/2550593',
+            title: 'Signalling and the Market for Capital',
+            authors: 'Spence',
+            year: '1973',
+            summary: 'Key theory on how markets interpret information and signals in economic exchange.',
+            url: 'https://www.jstor.org/stable/1882010',
+          },
+        ],
+      },
+      {
+        id: 'lesson-24',
+        title: 'Corporate Governance as Value Protection',
+        summary: 'Good governance reduces agency costs and protects long-run firm value by improving accountability.',
+        explanation: `
+          Corporate governance is a mechanism for protecting investors and ensuring that managerial decisions support long-term value creation. It includes the board, committees, executive incentives, disclosure standards, and oversight structures. The quality of governance affects both the cost of capital and the ability to attract patient capital.
+
+          Board independence, institutional ownership, and transparent governance can reduce agency costs and improve strategic discipline. By contrast, weak governance often allows managerial entrenchment or poor capital allocations that erode value over time.
+        `,
+        simpleExplanation: 'Corporate governance matters because it helps ensure that managers act in the interests of owners and long-run value creation.',
+        example: 'A firm with a strong board and transparent disclosures often faces lower financing costs because investors are more confident in governance quality.',
+        analogy: 'Governance is like a reliable control system that keeps the organisation aligned with its destination.',
+        reflectionQuestion: 'Why does governance affect cost of capital?',
+        options: [
+          'Because it reduces uncertainty and agency costs that investors discount',
+          'Because it always reduces taxes',
+          'Because all investors prefer leverage regardless of governance',
+          'Because governance is unrelated to financing decisions',
+        ],
+        correctAnswer: 'Because it reduces uncertainty and agency costs that investors discount',
+        term: 'Corporate Governance',
+        researchPapers: [
+          {
+            title: 'The Cadbury Report',
+            authors: 'Cadbury Committee',
+            year: '1992',
+            summary: 'Long-standing governance framework for accountability and oversight in corporate control.',
+            url: 'https://www.ecgi.global/content/cadbury-report',
           },
         ],
       },
       {
         id: 'lesson-25',
-        title: 'Finance for Long-Term Stewardship',
-        summary: 'Excellent corporate finance combines disciplined investment, governance, and stewardship to create resilient value over time.',
+        title: 'Long-Term Stewardship',
+        summary: 'Sustainable corporate finance requires stewardship, discipline, and patience rather than short-term optimisation alone.',
         explanation: `
-          The most successful firms understand that financial policy is not a one-off exercise but a continuous discipline of stewardship. Finance must balance investment, risk, governance, and market expectations to preserve long-term value. This requires robust capital allocation, transparent disclosure, and good governance as well as a realistic assessment of uncertainty.
+          The long-term stewardship view of finance recognises that firms are not merely vehicles for short-term earnings but enduring institutions that create value over time. That requires disciplined capital allocation, prudent balance-sheet management, transparent governance, and strategic flexibility in the face of uncertainty.
 
-          Long-term stewardship means building a firm that can survive shocks, adapt to change, and continue to create value for shareholders and stakeholders. It is this combination of discipline, governance, and strategic foresight that distinguishes sound corporate finance from short-term opportunism.
+          Stewardship combines analytical discipline with a sense of responsibility to owners, employees, customers, and other stakeholders. It emphasises resilience, not simply expansion. In this sense, the goal of finance is not only to maximise current returns but to preserve the capacity to generate value repeatedly in changing economic conditions.
         `,
-        simpleExplanation: 'Corporate finance is a long-term discipline of disciplined capital allocation, governance, and risk management.',
-        example: 'A firm with strong governance and prudent capital allocation is better placed to withstand shocks and generate sustained value.',
-        analogy: 'Finance for stewardship is like maintaining a long-lived institution: it requires foresight, discipline, and resilience rather than short-term gain.',
-        reflectionQuestion: 'Why is long-term stewardship central to corporate finance?',
+        simpleExplanation: 'Good corporate finance is a long-term stewardship discipline that balances risk, governance, and sustainable value creation.',
+        example: 'A company that maintains prudent leverage and strong governance is usually better placed to survive downturns and preserve value over time.',
+        analogy: 'Long-term stewardship is like maintaining a durable institution rather than taking short-term gains at the expense of the future.',
+        reflectionQuestion: 'Why is stewardship central to corporate finance?',
         options: [
-          'Because sustainable value creation depends on disciplined capital allocation and governance',
-          'Because accounting earnings always represent long-term value',
-          'Because market prices are fixed regardless of strategy',
-          'Because financial management is separate from strategy and governance',
+          'Because sustainable value creation depends on governance, discipline, and resilience',
+          'Because short-term growth always exceeds long-term value',
+          'Because governance has no effect on capital allocation',
+          'Because financing strategy can ignore risk permanently',
         ],
-        correctAnswer: 'Because sustainable value creation depends on disciplined capital allocation and governance',
-        term: 'Stewardship',
+        correctAnswer: 'Because sustainable value creation depends on governance, discipline, and resilience',
+        term: 'Long-Term Stewardship',
         researchPapers: [
           {
-            title: 'Corporate Governance and the Board: An Overview',
-            authors: 'Cadbury Report',
-            year: '1992',
-            summary: 'Important governance framework for long-term stakeholder stewardship.',
-            url: 'https://www.ecgi.global/content/cadbury-report',
+            title: 'Agency Costs of Free Cash Flow, Corporate Finance, and Takeovers',
+            authors: 'Michael C. Jensen',
+            year: '1986',
+            summary: 'Classic framework for value discipline and stewardship under uncertainty.',
+            url: 'https://www.jstor.org/stable/3890432',
           },
         ],
       },
